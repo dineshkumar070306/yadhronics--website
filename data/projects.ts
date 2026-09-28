@@ -160,6 +160,56 @@ export const projects: Project[] = [
     studentInvolvement:
       "3 students trained custom models and optimised inference speed.",
   },
+    {
+    slug: "sericulture-farming",
+    title: "Sericulture Farming Automation",
+    category: "Agriculture IoT",
+    image: "/images/projects/sericulture-farming.svg",
+    techStack: ["ESP32", "DHT22", "Humidity Sensor", "MQTT", "Relay"],
+    shortDesc:
+      "Smart silkworm rearing system with automated temperature, humidity, and light control for optimal cocoon production.",
+    problem:
+      "Silkworm rearing requires precise environmental conditions — temperature between 24-28°C, humidity at 70-85%, and controlled light cycles. Manual monitoring leads to crop loss and inconsistent cocoon quality.",
+    solution:
+      "An IoT-enabled sericulture automation system that continuously monitors temperature, humidity, and light, automatically adjusting humidifiers, heaters, and ventilation to maintain optimal rearing conditions across all larval stages.",
+    features: [
+      "Multi-stage climate control (24-28°C optimal)",
+      "Automated humidity management (70-85% RH)",
+      "Light cycle control for larval development",
+      "Real-time alerts on mobile app",
+      "Cloud dashboard for remote monitoring",
+      "Historical data logging per rearing batch",
+    ],
+    deployment:
+      "Deployed in 8 sericulture units across Tamil Nadu and Karnataka, improving cocoon yield by 25%.",
+    studentInvolvement:
+      "4 agriculture engineering students contributed sensor calibration and field validation as part of their final-year project.",
+  },
+  {
+    slug: "pwm-simulation",
+    title: "PWM Simulation & Control",
+    category: "Embedded Control",
+    image: "/images/projects/pwm-simulation.svg",
+    techStack: ["ESP32", "Arduino", "Timer", "Oscilloscope", "C++"],
+    shortDesc:
+      "Pulse Width Modulation simulation and control system for motor speed, LED dimming, and power regulation.",
+    problem:
+      "Engineering students and hobbyists struggle to understand PWM principles visually. Traditional hardware testing is expensive and slow, requiring oscilloscopes and dedicated setups.",
+    solution:
+      "A web-based and hardware-based PWM simulation platform that lets users configure duty cycle, frequency, and waveforms in real time — with visual output on screen and physical output via LED/motor for verification.",
+    features: [
+      "Interactive duty cycle control (0-100%)",
+      "Frequency range: 1 Hz to 40 kHz",
+      "Real-time waveform visualisation",
+      "LED dimming and motor speed demo",
+      "Preset modes for servos and motor drivers",
+      "Educational mode for students",
+    ],
+    deployment:
+      "Used by 500+ engineering students across partner colleges for learning PWM concepts.",
+    studentInvolvement:
+      "3 ECE students developed the simulation web app and hardware demo kit as part of a training workshop.",
+  },
 ];
 
 export function getProject(slug: string) {

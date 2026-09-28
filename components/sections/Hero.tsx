@@ -56,17 +56,17 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="mb-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <Button href="/training" variant="accent">
-              Explore Courses →
-            </Button>
-            <Button
-              href="/industry"
-              variant="secondary"
-              className="border-white text-white hover:bg-white hover:text-primary"
-            >
-              Request a Project Quote →
-            </Button>
-          </div>
+  <Button href="/projects" variant="accent">
+    View Projects →
+  </Button>
+  <Button
+    href="/industry"
+    variant="secondary"
+    className="border-white text-white hover:bg-white hover:text-primary"
+  >
+    Request a Project Quote →
+  </Button>
+</div>
 
           {/* Contact info block */}
           <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-3 border-t border-white/10 pt-6 text-sm text-gray-300 sm:flex-row sm:gap-8">
