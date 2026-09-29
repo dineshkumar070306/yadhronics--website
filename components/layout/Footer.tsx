@@ -124,26 +124,15 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-4 font-bold">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <Link href="/about" className="hover:text-accent">About Us</Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-accent">Projects</Link>
-              </li>
-              <li>
-                <Link href="/training" className="hover:text-accent">Training</Link>
-              </li>
-              <li>
-                <Link href="/colleges" className="hover:text-accent">For Colleges</Link>
-              </li>
-              <li>
-                <Link href="/industry" className="hover:text-accent">For Industry</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-accent">Contact</Link>
-              </li>
-            </ul>
+<ul className="space-y-2 text-sm text-gray-300">
+  <li><Link href="/about" className="hover:text-accent">About Us</Link></li>
+  <li><Link href="/projects" className="hover:text-accent">Projects</Link></li>
+  <li><Link href="/training" className="hover:text-accent">Training</Link></li>
+  <li><Link href="/careers" className="hover:text-accent">Careers</Link></li>
+  <li><Link href="/colleges" className="hover:text-accent">For Colleges</Link></li>
+  <li><Link href="/industry" className="hover:text-accent">For Industry</Link></li>
+  <li><Link href="/contact" className="hover:text-accent">Contact</Link></li>
+</ul>
           </div>
 
           <div>
