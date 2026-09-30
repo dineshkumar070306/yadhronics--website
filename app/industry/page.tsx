@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 import {
   Zap,
   Shield,
@@ -85,23 +86,24 @@ const processSteps = [
 export default function IndustryPage() {
   return (
     <>
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">
-            For Industry & Startups
-          </p>
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-            Your Engineering Partner From Idea to Production
-          </h1>
-          <p className="mb-8 text-lg text-gray-300">
-            PCB design, firmware, IoT, control panels, and web apps — all
-            delivered by one accountable team.
-          </p>
-          <Button href="/contact?type=project" variant="accent">
-            Request a Project Quote →
-          </Button>
-        </div>
-      </section>
+     <section className="bg-warm py-32">
+  <div className="container mx-auto max-w-3xl text-center">
+    <p className="eyebrow mb-3 text-accent">
+      — For Industry & Startups —
+    </p>
+    <h1 className="mb-6 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      Your Engineering Partner From Idea to Production
+    </h1>
+    <div className="divider mx-auto" />
+    <p className="mb-8 text-lg font-light text-muted">
+      PCB design, firmware, IoT, control panels, and web apps — all delivered
+      by one accountable team.
+    </p>
+    <Link href="/contact?type=project" className="btn-primary">
+      Request a Project Quote →
+    </Link>
+  </div>
+</section>
 
       <section className="section">
         <div className="container mx-auto">

@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 import { Target, Eye, Heart } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -12,18 +13,22 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-            Engineering the Future, Together
-          </h1>
-          <p className="text-lg text-gray-300">
-            Yadhronics is an engineering and technology company specialising in
-            embedded systems, IoT, control panels, and PCB design — with a
-            strong focus on industry-academia collaboration.
-          </p>
-        </div>
-      </section>
+      <section className="bg-warm py-32">
+  <div className="container mx-auto max-w-3xl text-center">
+    <p className="eyebrow mb-3 text-accent">
+      — About Yadhronics —
+    </p>
+    <h1 className="mb-6 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      Engineering the Future, Together
+    </h1>
+    <div className="divider mx-auto" />
+    <p className="text-lg font-light text-muted">
+      Yadhronics is an engineering and technology company specialising in
+      embedded systems, IoT, control panels, and PCB design — with a strong
+      focus on industry-academia collaboration.
+    </p>
+  </div>
+</section>
 
       <section className="section">
         <div className="container mx-auto max-w-4xl">

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import Button from "@/components/ui/Button";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -12,9 +11,8 @@ const navItems = [
   { label: "Projects", href: "/projects" },
   { label: "Training", href: "/training" },
   { label: "Careers", href: "/careers" },
-  { label: "For Colleges", href: "/colleges" },
-  { label: "For Industry", href: "/industry" },
-  { label: "Contact", href: "/contact" },
+  { label: "Colleges", href: "/colleges" },
+  { label: "Industry", href: "/industry" },
 ];
 
 export default function Navbar() {
@@ -30,28 +28,31 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+        scrolled
+          ? "border-b border-ink/5 bg-cream/95 backdrop-blur-md"
+          : "bg-transparent"
       }`}
     >
-      <nav className="container mx-auto flex items-center justify-between py-3">
-        <Link href="/" className="flex items-center">
+      <nav className="container mx-auto flex items-center justify-between py-4">
+        <Link href="/" className="group flex items-center gap-2">
           <Image
             src="/images/logo.png"
             alt="Yadhronics"
-            width={180}
-            height={60}
-            className="h-14 w-auto"
+            width={220}
+            height={64}
             priority
+            className="transition-transform duration-300 group-hover:scale-105"
+            style={{ width: "auto", height: "64px" }}
           />
         </Link>
 
-        <ul className="hidden items-center gap-6 lg:flex">
+        <ul className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-sm font-medium text-dark transition hover:text-cta"
+                className="relative text-[0.7rem] font-medium uppercase tracking-[0.18em] text-ink/70 transition hover:text-accent"
               >
                 {item.label}
               </Link>
@@ -60,9 +61,9 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden lg:block">
-          <Button href="/industry" variant="primary">
-            Request Quote
-          </Button>
+          <Link href="/contact" className="btn-primary !py-3 !px-6 !text-[0.65rem]">
+            Contact
+          </Link>
         </div>
 
         <button
@@ -75,23 +76,23 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t bg-white lg:hidden">
+        <div className="border-t border-ink/5 bg-cream lg:hidden">
           <ul className="container mx-auto flex flex-col gap-1 py-4">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-light"
+                  className="block rounded-lg px-4 py-3 text-sm font-medium uppercase tracking-wider text-ink hover:bg-sand"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
             <li className="px-4 pt-2">
-              <Button href="/industry" className="w-full">
-                Request Quote
-              </Button>
+              <Link href="/contact" className="btn-primary w-full">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 import {
   Building2,
   Users,
@@ -80,23 +81,24 @@ const processSteps = [
 export default function CollegesPage() {
   return (
     <>
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">
-            Industry-Academia Collaboration
-          </p>
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-            Partner with Yadhronics for Real Student Outcomes
-          </h1>
-          <p className="mb-8 text-lg text-gray-300">
-            Join 300+ colleges who trust us for industry-aligned training,
-            project mentorship, and Centre of Excellence setup.
-          </p>
-          <Button href="/contact?type=partnership" variant="accent">
-            Request a Campus Partnership Proposal →
-          </Button>
-        </div>
-      </section>
+      <section className="bg-warm py-32">
+  <div className="container mx-auto max-w-3xl text-center">
+    <p className="eyebrow mb-3 text-accent">
+      — Industry-Academia Collaboration —
+    </p>
+    <h1 className="mb-6 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      Partner with Yadhronics for Real Student Outcomes
+    </h1>
+    <div className="divider mx-auto" />
+    <p className="mb-8 text-lg font-light text-muted">
+      Join 300+ colleges who trust us for industry-aligned training, project
+      mentorship, and Centre of Excellence setup.
+    </p>
+    <Link href="/contact?type=partnership" className="btn-primary">
+      Request a Campus Partnership Proposal →
+    </Link>
+  </div>
+</section>
 
       <section className="section">
         <div className="container mx-auto">

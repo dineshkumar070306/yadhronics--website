@@ -37,25 +37,26 @@ export default async function CourseDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="mb-4 flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-1 rounded-full bg-accent/20 px-3 py-1 text-sm font-semibold text-accent">
-              <Clock size={14} /> {course.duration}
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-cta/20 px-3 py-1 text-sm font-semibold text-cta">
-              <GraduationCap size={14} /> {course.level}
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold">
-              {course.mode}
-            </span>
-          </div>
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-            {course.title}
-          </h1>
-          <p className="text-lg text-gray-300">{course.subtitle}</p>
-        </div>
-      </section>
+      <section className="bg-warm py-32">
+  <div className="container mx-auto max-w-4xl">
+    <div className="mb-4 flex flex-wrap gap-2">
+      <span className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent">
+        {course.duration}
+      </span>
+      <span className="inline-flex items-center gap-1 rounded-full bg-peach/20 px-3 py-1 text-sm font-medium text-ink">
+        {course.level}
+      </span>
+      <span className="inline-flex items-center gap-1 rounded-full bg-sand px-3 py-1 text-sm font-medium text-ink">
+        {course.mode}
+      </span>
+    </div>
+    <h1 className="mb-4 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      {course.title}
+    </h1>
+    <div className="divider" />
+    <p className="text-lg font-light text-muted">{course.subtitle}</p>
+  </div>
+</section>
 
       {/* Body */}
       <section className="section">

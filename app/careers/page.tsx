@@ -101,24 +101,24 @@ export default function CareersPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">
-            Careers at Yadhronics
-          </p>
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-            Build the Future With Us
-          </h1>
-          <p className="mb-8 text-lg text-gray-300">
-            We're a team of engineers, trainers, and problem-solvers shipping
-            real hardware and software for students, startups, and industry.
-          </p>
-          <Button href="#openings" variant="accent">
-            See Open Positions →
-          </Button>
-        </div>
-      </section>
-
+      <section className="bg-warm py-32">
+  <div className="container mx-auto max-w-3xl text-center">
+    <p className="eyebrow mb-3 text-accent">
+      — Careers at Yadhronics —
+    </p>
+    <h1 className="mb-6 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      Build the Future With Us
+    </h1>
+    <div className="divider mx-auto" />
+    <p className="mb-8 text-lg font-light text-muted">
+      We're a team of engineers, trainers, and problem-solvers shipping real
+      hardware and software for students, startups, and industry.
+    </p>
+    <a href="#openings" className="btn-primary">
+      See Open Positions →
+    </a>
+  </div>
+</section>
       {/* Why Yadhronics */}
       <section className="section">
         <div className="container mx-auto">

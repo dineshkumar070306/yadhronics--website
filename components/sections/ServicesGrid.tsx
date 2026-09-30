@@ -4,14 +4,17 @@ import { services } from "@/data/services";
 
 export default function ServicesGrid() {
   return (
-    <section className="bg-light py-12 md:py-16">
+    <section className="bg-cream py-16 md:py-24">
       <div className="container mx-auto">
-        <SectionHeading
-          eyebrow="What We Do"
-          title="Engineering Solutions Across Domains"
-          subtitle="From embedded systems to web applications, we deliver end-to-end product development services."
-        />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="animate-on-scroll">
+          <SectionHeading
+            eyebrow="— What We Do —"
+            title="Engineering Solutions Across Domains"
+            subtitle="From embedded systems to web applications, we deliver end-to-end product development for students, startups, and industry."
+          />
+        </div>
+
+        <div className="mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <ServiceCard
               key={service.slug}

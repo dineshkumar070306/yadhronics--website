@@ -32,19 +32,18 @@ export default async function ServiceDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">
-            Service
-          </p>
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-            {service.title}
-          </h1>
-          <p className="max-w-2xl text-lg text-gray-300">
-            {service.shortDesc}
-          </p>
-        </div>
-      </section>
+      <section className="bg-warm py-32">
+  <div className="container mx-auto">
+    <p className="eyebrow mb-3 text-accent">— Service —</p>
+    <h1 className="mb-4 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      {service.title}
+    </h1>
+    <div className="divider" />
+    <p className="max-w-2xl text-lg font-light text-muted">
+      {service.shortDesc}
+    </p>
+  </div>
+</section>
 
       {/* Body */}
       <section className="section">

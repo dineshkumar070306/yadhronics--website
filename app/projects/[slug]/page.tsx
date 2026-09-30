@@ -31,19 +31,20 @@ export default async function ProjectDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary py-32 text-white">
-        <div className="container mx-auto">
-          <span className="mb-3 inline-block rounded-full bg-cta px-3 py-1 text-xs font-semibold">
-            {project.category}
-          </span>
-          <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-            {project.title}
-          </h1>
-          <p className="max-w-2xl text-lg text-gray-300">
-            {project.shortDesc}
-          </p>
-        </div>
-      </section>
+      <section className="bg-warm py-32">
+  <div className="container mx-auto">
+    <span className="mb-3 inline-block rounded-full bg-peach px-3 py-1 text-xs font-medium text-white">
+      {project.category}
+    </span>
+    <h1 className="mb-4 font-heading text-4xl font-semibold text-ink md:text-5xl">
+      {project.title}
+    </h1>
+    <div className="divider" />
+    <p className="max-w-2xl text-lg font-light text-muted">
+      {project.shortDesc}
+    </p>
+  </div>
+</section>
 
       {/* Body */}
       <section className="section">

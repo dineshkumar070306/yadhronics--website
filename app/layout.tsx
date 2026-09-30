@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollAnimations from "@/components/utils/ScrollAnimations";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.yadhronics.com"),
@@ -45,10 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-  <Navbar />
-  <main>{children}</main>
-  <Footer />
-</body>
+        <ScrollAnimations />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
